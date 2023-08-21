@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/thingstodo-monterey/static/css/main.ed77843f.css",
+    "main.js": "/thingstodo-monterey/static/js/main.30da054b.js",
+    "index.html": "/thingstodo-monterey/index.html",
+    "main.ed77843f.css.map": "/thingstodo-monterey/static/css/main.ed77843f.css.map",
+    "main.30da054b.js.map": "/thingstodo-monterey/static/js/main.30da054b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed77843f.css",
+    "static/js/main.30da054b.js"
+  ]
+}
