@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
-const Location = ({ id, image, info, name, price, removeLocation }) => { 
+const Tour = ({ id, image, info, name, price, removeTour }) => { 
   const [readMore, setReadMore] = useState(false);
   return (
-    <article className="single-location">
+    <article className="single-tour">
       <img src={image} alt={name} />
       <footer>
-        <div className="location-info">
+        <div className="tour-info">
           <h4>{name}</h4>
-          <h4 className="location-price">${price}</h4>
+          <h4 className="tour-price">${price}</h4>
         </div>
         <p>
           {readMore ? info : `${info.substring(0, 200)}...`}
@@ -16,7 +16,7 @@ const Location = ({ id, image, info, name, price, removeLocation }) => {
             {readMore ? 'show less' : '  read more'}
           </button>
         </p>
-        <button className="delete-btn" onClick={() => removeLocation(id)}>
+        <button className="delete-btn" onClick={() => removeTour(id)}>
           not interested
         </button>
       </footer>
@@ -24,4 +24,4 @@ const Location = ({ id, image, info, name, price, removeLocation }) => {
   );
 };
 
-export default Location;
+export default Tour;

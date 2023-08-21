@@ -1,20 +1,38 @@
 import React, { useState, useEffect } from 'react'
 import Loading from './Loading'
-import Locations from './Locations'
-import LocationData from './data';
+import Tours from './Tours'
+import toursData from './data';
+// ATTENTION!!!!!!!!!!
+// I SWITCHED TO PERMANENT DOMAIN
+//const url = 'https://course-api.com/react-tours-project'
 
 function App() {
   const [loading, setLoading] = useState(true)
-  const [locations, setLocations] = useState([])
+  const [tours, setTours] = useState([])
 
-  const removeLocation = (id) => {
-    const newLocations = locations.filter((location) => location.id !== id)
-    setLocations(newLocations)
+  const removeTour = (id) => {
+    const newTours = tours.filter((tour) => tour.id !== id)
+    setTours(newTours)
   }
 
+  // const fetchTours = async () => {
+  //   setLoading(true)
+  //   try {
+  //     const response = await fetch(url)
+  //     const tours = await response.json()
+  //     setLoading(false)
+  //     setTours(tours)
+  //   } catch (error) {
+  //     setLoading(false)
+  //     console.log(error)
+  //   }
+  // }
+  // useEffect(() => {
+  //   fetchTours()
+  // }, [])
   useEffect(() => {
     setLoading(false);
-    setLocations(LocationData); 
+    setTours(toursData); // Use the imported data
   }, []);
 
   if (loading) {
@@ -24,12 +42,12 @@ function App() {
       </main>
     )
   }
-  if (locations.length === 0) {
+  if (tours.length === 0) {
     return (
       <main>
         <div className='title'>
-          <h2>no locations left</h2>
-          <button className='btn' onClick={() => setLocations(LocationData)}>
+          <h2>no tours left</h2>
+          <button className='btn' onClick={() => setTours(toursData)}>
             refresh
           </button>
         </div>
@@ -38,7 +56,7 @@ function App() {
   }
   return (
     <main>
-      <Locations locations={locations} removeLocation={removeLocation} />
+      <Tours tours={tours} removeTour={removeTour} />
     </main>
   )
 }
