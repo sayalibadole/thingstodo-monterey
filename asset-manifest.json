@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/thingstodo-monterey/static/css/main.ed77843f.css",
-    "main.js": "/thingstodo-monterey/static/js/main.dad9927c.js",
+    "main.css": "/thingstodo-monterey/static/css/main.566bd010.css",
+    "main.js": "/thingstodo-monterey/static/js/main.ad7db64c.js",
     "index.html": "/thingstodo-monterey/index.html",
-    "main.ed77843f.css.map": "/thingstodo-monterey/static/css/main.ed77843f.css.map",
-    "main.dad9927c.js.map": "/thingstodo-monterey/static/js/main.dad9927c.js.map"
+    "main.566bd010.css.map": "/thingstodo-monterey/static/css/main.566bd010.css.map",
+    "main.ad7db64c.js.map": "/thingstodo-monterey/static/js/main.ad7db64c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed77843f.css",
-    "static/js/main.dad9927c.js"
+    "static/css/main.566bd010.css",
+    "static/js/main.ad7db64c.js"
   ]
 }
